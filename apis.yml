@@ -1,7 +1,22 @@
 aid: populrme
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/populrme.png
 name: Populr.me
-description: Populr.me is a company surfaced as a portfolio company of 500-global and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Populr.me was a self-service website builder that let users create and host single-page
+  personal and marketing pages on free and paid subscription tiers. Surfaced as a portfolio company of
+  500 Global, it was added to the API Evangelist network as a stub. Enrichment found the consumer service
+  permanently shut down on June 1, 2023 (users directed to Wix, Weebly, Squarespace, GoDaddy) and no public
+  API, developer program, documentation, or event surface remains — only a static shutdown page on the domain.
 url: https://raw.githubusercontent.com/api-evangelist/populrme/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +26,14 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Website Builder
+- Web Publishing
+- Landing Pages
+- Content Management
+- Defunct
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +41,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/populrme-domain-security.yml
 - type: Website
   url: https://populr.me
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
